@@ -1,0 +1,62 @@
+@mixin resetInput(){
+    border: none;
+    outline: none;
+}
+@mixin bola($valor){
+    width: $valor;
+    height: $valor;
+}
+@mixin cor($valor,$cfonte){
+    background: $valor;
+    color: $cfonte;
+}
+.filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--corFonte);
+}
+.input{
+    display: flex;
+    background: var(--usuariosFundo);
+    box-shadow: 0 0 4px #00000066;
+    border-radius: 10px;
+    align-items: center;
+    margin: 8px 0;
+    padding: .5em;
+    width: 95%;
+}
+.input label{
+    display: flex;
+    align-items: center;
+}
+.input:focus-within .filterIcon{
+    color: var(--selecionado);
+}
+.filterIcon{
+    font-size: 20px;
+    transition: .8s
+}
+.filterInput{
+    @include resetInput();
+    background: transparent;
+    font-size: 14px;
+    color: var(--corFonte);
+    width: 100%;
+}
+.filter button{
+    @include resetInput();
+    @include bola(35px);
+    @include cor(var(--usuariosFundo2),#fff);
+    border-radius: 50%;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.filter button:focus{
+    @include cor(var(--selecionado),#fff );
+    box-shadow: 0 0 4px var(--selecionado);
+}
+.btnIcon{
+    margin: 5px 4px;
+}

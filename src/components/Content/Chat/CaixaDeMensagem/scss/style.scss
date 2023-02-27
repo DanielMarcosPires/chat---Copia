@@ -1,0 +1,54 @@
+@mixin resetInput(){
+    border: none;
+    outline: none;
+    background: transparent;
+}
+@mixin quadrado($valor){
+    width: $valor;
+    height: $valor;
+}
+.CaixaDeMensagem{
+ background: var(--usuariosFundo);
+ box-shadow: 1px -3px 4px #000;
+ grid-area: ct;
+}
+.CaixaDeMensagemMargem{
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 0 auto;    
+    padding: 25px;
+    width: 90%;
+}
+.CaixaDeMensagemIcone{
+    font-size: 24px;
+}
+.CaixaDeMensagemInput{
+    align-items: center;
+    border-radius: 20px;
+    background: var(--usuariosFundo2);
+    box-shadow: 0 0 2px #000;
+    display: flex;
+    gap: 8px;
+    padding: 8px 8px;
+    width: 100%;
+}
+.CaixaDeMensagemInput input{
+    @include resetInput();
+    font-size: 18px;
+    width: 100%;
+}
+.CaixaDeMensagemBotao{
+    @include resetInput();
+    @include quadrado(30px);
+    align-items: center;
+    background: #00ff00aa;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 8px;
+}

@@ -1,0 +1,17 @@
+.Comentario{
+    background: #dcf8c6;
+    border-radius: 10px;
+    bottom: 30%;
+    right: 10%;
+    padding: 20px;
+}
+.Comentario::after{
+    content:'';
+    position: absolute;
+    bottom: -5%;
+    right: 2%;
+    rotate: 30deg;
+    background: #dcf8c6;
+    width: 20px;
+    height: 20px;
+}

@@ -1,7 +1,11 @@
+
 .App {
   text-align: center;
 }
-
+.chat{
+  border: solid;
+  background:#ebebeb;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

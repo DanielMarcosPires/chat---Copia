@@ -1,0 +1,16 @@
+.ListaDeMensagems{
+    display: flex;
+    flex-direction: column;
+    grid-area:ms ;
+    align-items: end;
+    justify-content: end;
+    margin: 8px auto;
+    width: 95%;
+}
+.mensagemEnviado{
+    list-style: none;
+    position: relative;
+    border-radius: 10px;
+    margin: 8px 0;
+    background: var(--verde);
+}

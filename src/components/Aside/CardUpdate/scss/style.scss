@@ -1,0 +1,28 @@
+.CardUpdate{
+    background: var(--azul);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.CardUpdateMargin{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+}
+.CardUpdateIcon{
+    background: var(--usuarios);
+    color: var(--icone);
+    display: flex;
+    padding: 8px;
+    font-size: 35px;
+    border-radius: 50%;
+}
+.CardUpdateDescription p{
+    margin:12px 0;
+
+}
+.CardUpdateDescription p:nth-child(2){
+   color: rgba(0, 0, 0, 0.785);
+}

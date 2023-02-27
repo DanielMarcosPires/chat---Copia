@@ -1,0 +1,36 @@
+.Usuario {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.2s;
+  width: 100%;
+}
+.UsuarioNome{
+  width: max-content;
+}
+.UsuarioMargem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.Usuario:focus-within {
+}
+.UsuarioInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10em;
+    align-items: center;
+    color: var(--corFonte);
+    transition: 0.2s;
+    width: 300px;
+}
+.UsuarioMargemIcone{
+  font-size: 24px;
+}
+.UsuarioMargemIcone img{
+  background: var(--corFonte);
+  border-radius: 50%;
+  max-width: 35px;
+}

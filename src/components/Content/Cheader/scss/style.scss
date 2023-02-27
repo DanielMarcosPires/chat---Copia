@@ -1,0 +1,33 @@
+
+.ContentHeader{
+    background: var(--usuariosFundo);
+    box-shadow: 1px 4px 4px #000;
+    padding: 1em 8px;
+    align-items: center;
+    width: 100%;
+}
+.ContentHeaderMargin img{
+    background: var(--selecionado);
+    border-radius: 50%;
+    max-width: 35px;
+}
+.ContentHeaderMargin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+}
+.ContentHeaderIcons{
+    display: flex;
+    justify-content: space-between;
+    color: var(--corFonte);
+    font-size: 35px;
+}
+.ContentHeaderIcon{
+    font-size: 29.1px;
+}
+.ContentHeaderIcons{
+    display: flex;
+    gap: 16px;
+}

@@ -1,0 +1,95 @@
+@mixin altura($valor){
+    height: $valor;
+}
+.Alerta{
+    background: #f00;
+}
+.d-flex{
+    display: flex;
+    flex-direction: column
+}
+.aside{
+    @include altura(100vh);
+    background: var(--usuariosFundo);
+    box-shadow: 0 0 1px 0.1px var(--corFonte);
+    height: 100vh;
+    width: 100%;
+    max-width: 500px;
+}
+.asideHeaderMargin{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 1em auto;
+   width: 90%;
+}
+.asideHeaderNav{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.asideHeaderNav a{
+    border-bottom: 2px solid transparent;
+    transition: .5s;
+}
+.asideHeaderNav a:focus{
+    border-bottom: solid 2px var(--corFonte);
+}
+.asideHeaderIcons{
+    color: var(--corFonte);
+    font-size: 30px;
+}
+.asideContent{
+    @include altura(100vh);
+    background: var(--usuarios);
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+
+.UserIcon{
+    font-size: 25px;
+    color: var(--corFonte);
+}
+.CriarContato{
+    display: inline-block;
+    position: relative;
+}
+.CriarContatoMenu{
+    position: absolute;
+    display: none;
+    right: 0;
+    top: 100%;
+    width:max-content ;
+}
+.CriarContatoMenu .conteudo{
+    display: flex;
+    color: var(--corFonte);
+    padding: 5px 8px;
+    flex-direction: column;
+    text-align: center;
+}
+.CriarContatoMenuControle{
+    gap: 8px;
+}
+.CriarContatoInput{
+    margin: 4px 0;
+}
+.CriarContato input{
+    display: none;
+}
+input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"]:checked ~ .CriarContatoMenu{
+    background: var(--usuariosFundo2);
+    display: inline-block;
+}
+
+.controle{
+    position: relative;
+}
+.PerfilIcone{
+    max-width: 30px;
+    background: var(--corFonte);
+    border-radius: 50%;
+}
